@@ -46,4 +46,7 @@ source/unix/gtkui/.dirstamp
 
 .DS_Store
 /build
+xcuserdata/
+project.xcworkspace/
+
 
