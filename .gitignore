@@ -43,3 +43,7 @@ source/unix/.deps/
 source/unix/.dirstamp
 source/unix/gtkui/.deps/
 source/unix/gtkui/.dirstamp
+
+.DS_Store
+/build
+
