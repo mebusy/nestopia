@@ -28,6 +28,10 @@ make install
 Differences on OS X:
 ```
 export PKG_CONFIG_PATH=/usr/local/opt/libarchive/lib/pkgconfig/
+
+for HomeBrew user, it may look like:
+export PKG_CONFIG_PATH=/usr/local/Cellar/libarchive/3.3.2/lib/pkgconfig
+
 ./configure --disable-gui
 ```
 In order to bootstrap the Autotools you will need:
