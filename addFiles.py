@@ -20,7 +20,7 @@ if __name__ == '__main__':
         for ext in [ ".cpp", ".hpp", ".inl"] :
             dist = os.path.join( _path, _filename + ext  )
             # print dist
-            if os.path.exists( dist ) :
+            if os.path.exists( dist[3:] ) :
                 # print dist
                 project.add_file_if_doesnt_exist( dist )
 
