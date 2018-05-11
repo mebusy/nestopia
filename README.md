@@ -10,7 +10,11 @@ The following platforms are supported:
 * Anything supported by libretro
 
 This project depends on the following libraries:
+
 libsdl2, libepoxy, libao, libarchive, zlib
+
+brew install autoconf-archive
+
 
 Optionally, it depends on GTK+3 for the GUI, currently only available on Linux and BSD.
 
@@ -29,8 +33,7 @@ Differences on OS X:
 ```
 export PKG_CONFIG_PATH=/usr/local/opt/libarchive/lib/pkgconfig/
 
-for HomeBrew user, it may look like:
-export PKG_CONFIG_PATH=/usr/local/Cellar/libarchive/3.3.2/lib/pkgconfig
+for HomeBrew user, if above path not exist, use `brew info libarchive` to check:
 
 ./configure --disable-gui
 ```
