@@ -22,8 +22,10 @@ if __name__ == '__main__':
             # print dist
             if os.path.exists( dist ) :
                 # print dist
-                # project.add_file_if_doesnt_exist( dist )
-                project.remove_file_by_path( dist )
+                # project.remove_file_by_path( dist )
+                group = project.get_or_create_group( _path[3:] )
+                project.add_file_if_doesnt_exist( dist, parent = group )
+                pass
 
     # save the project, otherwise your changes won't be picked up by Xcode
     project.save()
