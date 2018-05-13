@@ -1959,7 +1959,10 @@ namespace Nes
 		inline void Cpu::ExecuteOp()
 		{
 			cycles.offset = cycles.count;
-			(*this.*opcodes[opcode=FetchPc8()])();
+            
+            // qibinyi
+            opcode=FetchPc8() ;
+			(*this.*opcodes[ opcode ])();
 		}
 
 		void Cpu::Run0()
