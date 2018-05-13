@@ -45,7 +45,7 @@ source/unix/gtkui/.deps/
 source/unix/gtkui/.dirstamp
 
 .DS_Store
-/build
+nestopia_xcode/build
 xcuserdata/
 project.xcworkspace/
 
