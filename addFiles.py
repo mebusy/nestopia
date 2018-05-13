@@ -3,13 +3,13 @@ import os
 if __name__ == '__main__':
     from mod_pbxproj import XcodeProject
     # open the project
-    project = XcodeProject.Load('../nestopia_xcode.xcodeproj/project.pbxproj')
+    project = XcodeProject.Load('nestopia_xcode.xcodeproj/project.pbxproj')
 
     with open( "./cpp.txt" ) as fp:
         lines = fp.readlines()
 
     for line in lines:
-        line = "../" + line.strip()
+        line = line.strip()
         
         _path, _file = os.path.split( line )
         _filename2, _ext = os.path.splitext( _file )
@@ -20,7 +20,7 @@ if __name__ == '__main__':
         for ext in [ ".cpp", ".hpp", ".inl"] :
             dist = os.path.join( _path, _filename + ext  )
             # print dist
-            if os.path.exists( dist[3:] ) :
+            if os.path.exists( dist ) :
                 # print dist
                 project.add_file_if_doesnt_exist( dist )
 
