@@ -326,6 +326,10 @@ bool nst_archive_open(const char *filename, char **rom, int *romsize, const char
 	return false;
 }
 
+// qibinyi
+#define DATADIR "nestopia"
+
+
 void nst_db_load() {
 	Nes::Api::Cartridge::Database database(emulator);
 	char dbpath[512];

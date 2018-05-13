@@ -2007,12 +2007,17 @@
 				HEADER_SEARCH_PATHS = (
 					../source/common/,
 					../source/core/,
+					../source,
+					/usr/local/opt/libarchive/include/,
+					../source/sdl/,
+					/usr/local/Cellar/sdl2/2.0.8/include/SDL2/,
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wno-narrowing",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = /usr/local/Cellar/libepoxy/1.5.0_1/include/;
 			};
 			name = Debug;
 		};
@@ -2024,12 +2029,17 @@
 				HEADER_SEARCH_PATHS = (
 					../source/common/,
 					../source/core/,
+					../source,
+					/usr/local/opt/libarchive/include/,
+					../source/sdl/,
+					/usr/local/Cellar/sdl2/2.0.8/include/SDL2/,
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wno-narrowing",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = /usr/local/Cellar/libepoxy/1.5.0_1/include/;
 			};
 			name = Release;
 		};
