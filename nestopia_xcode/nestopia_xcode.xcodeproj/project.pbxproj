@@ -2032,9 +2032,7 @@
 					../source/common/,
 					../source/core/,
 					../source,
-					/usr/local/opt/libarchive/include/,
 					../source/sdl/,
-					/usr/local/Cellar/sdl2/2.0.8/include/SDL2/,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2048,7 +2046,7 @@
 					"-Wno-narrowing",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYSTEM_HEADER_SEARCH_PATHS = /usr/local/Cellar/libepoxy/1.5.0_1/include/;
+				SYSTEM_HEADER_SEARCH_PATHS = "/usr/local/Cellar/libepoxy/1.5.0_1/include/ /usr/local/opt/libarchive/include/ /usr/local/Cellar/sdl2/2.0.8/include/SDL2/";
 			};
 			name = Debug;
 		};
@@ -2061,9 +2059,7 @@
 					../source/common/,
 					../source/core/,
 					../source,
-					/usr/local/opt/libarchive/include/,
 					../source/sdl/,
-					/usr/local/Cellar/sdl2/2.0.8/include/SDL2/,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2077,7 +2073,7 @@
 					"-Wno-narrowing",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYSTEM_HEADER_SEARCH_PATHS = /usr/local/Cellar/libepoxy/1.5.0_1/include/;
+				SYSTEM_HEADER_SEARCH_PATHS = "/usr/local/Cellar/libepoxy/1.5.0_1/include/ /usr/local/opt/libarchive/include/ /usr/local/Cellar/sdl2/2.0.8/include/SDL2/";
 			};
 			name = Release;
 		};

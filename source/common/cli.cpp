@@ -56,12 +56,13 @@ void cli_show_usage() {
 	printf("Options are saved, and do not need to be set on future invocations.\n\n");
 }
 
+// qibinyi
 void cli_show_version() {
-    /*
+#ifdef VERSION 
 	printf("Nestopia UE %s\n", VERSION);
-    /*/
-    printf("Nestopia UE %s\n", "1.49-WIP");
-    //*/
+#else
+    printf("Nestopia UE %s\n", "1.49-WIP xcode");
+#endif
 }
     
 

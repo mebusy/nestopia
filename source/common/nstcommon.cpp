@@ -327,7 +327,6 @@ bool nst_archive_open(const char *filename, char **rom, int *romsize, const char
 }
 
 // qibinyi
-#define DATADIR "nestopia"
 
 
 void nst_db_load() {
@@ -347,7 +346,12 @@ void nst_db_load() {
 	}
 #ifndef _MINGW
 	// If it fails, try looking in the data directory
+#ifdef DATADIR
+	printf( "DATADIR: %s \n" , DATADIR ) ;
 	snprintf(dbpath, sizeof(dbpath), "%s/NstDatabase.xml", DATADIR);
+#else
+	snprintf(dbpath, sizeof(dbpath), "%s/NstDatabase.xml", "/usr/local/share/nestopia" );
+#endif
 	nstdb = new std::ifstream(dbpath, std::ifstream::in|std::ifstream::binary);
 	
 	if (nstdb->is_open()) {
