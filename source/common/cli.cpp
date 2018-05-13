@@ -60,7 +60,7 @@ void cli_show_version() {
     /*
 	printf("Nestopia UE %s\n", VERSION);
     /*/
-    printf("Nestopia UE %s\n", "version unknown");
+    printf("Nestopia UE %s\n", "1.49-WIP");
     //*/
 }
     
