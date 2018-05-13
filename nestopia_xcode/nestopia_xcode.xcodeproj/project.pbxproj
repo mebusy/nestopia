@@ -288,6 +288,10 @@
 		F189498C9AC3F9201E5D6A0C /* NstBoardBmc15in1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 662C40D884023C13C6AF1965 /* NstBoardBmc15in1.cpp */; };
 		F290409B94B1EFE7782526A9 /* NstBoardBmcA65as.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C32451F8C9FF421A37339D8 /* NstBoardBmcA65as.cpp */; };
 		F3074BD6B655160B00585930 /* NstApiUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EDA46C496F04E71CDF34C66 /* NstApiUser.cpp */; };
+		F317E13720A80B1C00CDDFE4 /* libepoxy.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F317E13620A80B1C00CDDFE4 /* libepoxy.dylib */; };
+		F317E13920A80C5800CDDFE4 /* libSDL2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F317E13820A80C5800CDDFE4 /* libSDL2.dylib */; };
+		F317E13B20A80C8400CDDFE4 /* libarchive.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F317E13A20A80C8400CDDFE4 /* libarchive.dylib */; };
+		F317E13D20A80CA800CDDFE4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F317E13C20A80CA800CDDFE4 /* libz.tbd */; };
 		F3394B99ADD9C11E53372136 /* NstImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16674F868FB240ABDAFC1651 /* NstImage.cpp */; };
 		F3B649F8BD4F0287B3542223 /* NstBoardDreamtech.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64B34C8E9619C0696D8FB06A /* NstBoardDreamtech.cpp */; };
 		F3DE445DBA32E00672A3440D /* NstInpBandaiHyperShot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9659487FAA3DB0DE6B178B5D /* NstInpBandaiHyperShot.cpp */; };
@@ -869,6 +873,10 @@
 		F1EC4673A2BFF49234FE6A0D /* NstBoardIremH3001.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = NstBoardIremH3001.cpp; path = ../source/core/board/NstBoardIremH3001.cpp; sourceTree = SOURCE_ROOT; };
 		F2394A6C9394C6DB01353885 /* NstBoardDreamtech.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NstBoardDreamtech.hpp; path = ../source/core/board/NstBoardDreamtech.hpp; sourceTree = SOURCE_ROOT; };
 		F30E5C8A20A7F3F2000B764D /* nestopia_xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nestopia_xcode; sourceTree = BUILT_PRODUCTS_DIR; };
+		F317E13620A80B1C00CDDFE4 /* libepoxy.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libepoxy.dylib; path = ../../../../../usr/local/Cellar/libepoxy/1.5.0_1/lib/libepoxy.dylib; sourceTree = "<group>"; };
+		F317E13820A80C5800CDDFE4 /* libSDL2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL2.dylib; path = ../../../../../usr/local/Cellar/sdl2/2.0.8/lib/libSDL2.dylib; sourceTree = "<group>"; };
+		F317E13A20A80C8400CDDFE4 /* libarchive.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libarchive.dylib; path = ../../../../../usr/local/Cellar/libarchive/3.3.2/lib/libarchive.dylib; sourceTree = "<group>"; };
+		F317E13C20A80CA800CDDFE4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F3584F54B627F508D73FA67F /* NstBoardMmc6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = NstBoardMmc6.cpp; path = ../source/core/board/NstBoardMmc6.cpp; sourceTree = SOURCE_ROOT; };
 		F3A34E62927E1EB1DC6DDC24 /* NstCheats.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = NstCheats.cpp; path = ../source/core/NstCheats.cpp; sourceTree = SOURCE_ROOT; };
 		F3ED401ABF644DCA12D9A434 /* NstApiDipSwitches.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NstApiDipSwitches.hpp; path = ../source/core/api/NstApiDipSwitches.hpp; sourceTree = SOURCE_ROOT; };
@@ -917,6 +925,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F317E13720A80B1C00CDDFE4 /* libepoxy.dylib in Frameworks */,
+				F317E13D20A80CA800CDDFE4 /* libz.tbd in Frameworks */,
+				F317E13920A80C5800CDDFE4 /* libSDL2.dylib in Frameworks */,
+				F317E13B20A80C8400CDDFE4 /* libarchive.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1515,6 +1527,7 @@
 				D75349CF9D71068EB6F3DD52 /* cursor.cpp */,
 				32F640CCBCDB8063DDC5847D /* sdlvideo.cpp */,
 				54B848F0B408D7CFFA614FA6 /* sdlmain.cpp */,
+				F317E13520A80B1B00CDDFE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1531,6 +1544,17 @@
 			children = (
 			);
 			path = nestopia_xcode;
+			sourceTree = "<group>";
+		};
+		F317E13520A80B1B00CDDFE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F317E13C20A80CA800CDDFE4 /* libz.tbd */,
+				F317E13A20A80C8400CDDFE4 /* libarchive.dylib */,
+				F317E13820A80C5800CDDFE4 /* libSDL2.dylib */,
+				F317E13620A80B1C00CDDFE4 /* libepoxy.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2012,6 +2036,13 @@
 					../source/sdl/,
 					/usr/local/Cellar/sdl2/2.0.8/include/SDL2/,
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libepoxy/1.5.0_1/lib,
+					/usr/local/Cellar/sdl2/2.0.8/lib,
+					/usr/local/Cellar/libarchive/3.3.2/lib,
+					/usr/local/opt/libarchive/lib,
+				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wno-narrowing",
@@ -2033,6 +2064,13 @@
 					/usr/local/opt/libarchive/include/,
 					../source/sdl/,
 					/usr/local/Cellar/sdl2/2.0.8/include/SDL2/,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libepoxy/1.5.0_1/lib,
+					/usr/local/Cellar/sdl2/2.0.8/lib,
+					/usr/local/Cellar/libarchive/3.3.2/lib,
+					/usr/local/opt/libarchive/lib,
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
