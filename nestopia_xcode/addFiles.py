@@ -9,7 +9,7 @@ if __name__ == '__main__':
         lines = fp.readlines()
 
     for line in lines:
-        line = line.strip()
+        line = "../" + line.strip()
         
         _path, _file = os.path.split( line )
         _filename2, _ext = os.path.splitext( _file )
