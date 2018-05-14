@@ -1960,8 +1960,12 @@ namespace Nes
 		{
 			cycles.offset = cycles.count;
             
+            uint opPC = pc ;
             // qibinyi
             opcode=FetchPc8() ;
+            
+            // printf( "%X : %X \n" , opPC, opcode ) ;
+            
 			(*this.*opcodes[ opcode ])();
 		}
 
